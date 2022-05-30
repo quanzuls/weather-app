@@ -1,6 +1,6 @@
 # Weather App
 
-Get weather and forecast location 
+Get weather and forecast by location 
 
 ## OTP App
 

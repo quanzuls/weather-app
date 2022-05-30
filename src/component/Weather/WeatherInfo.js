@@ -25,7 +25,7 @@ const WeatherInfo = (props) => {
     }, [props.keyword])
 
     const displayData = async () => {
-        const res = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${props.keyword}&units=metric&APPID=c10bb3bd22f90d636baa008b1529ee25&lang=vi`);
+        const res = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${props.keyword}&units=metric&APPID=c10bb3bd22f90d636baa008b1529ee25&lang=vi`);
         if (res && res.data) {
             setData(res.data);
             setCountry(res.data.sys.country);
